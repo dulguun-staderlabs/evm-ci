@@ -25,7 +25,7 @@ jobs:
       - name: Run linters
         uses: wearerequired/lint-action@v2.1.0
         with:
-          github_token: ${{ github_token }}
+          github_token: ${{ inputs.github_token }}
           prettier: true
           auto_fix: true
           prettier_extensions: 'js,json,md,ts,tsx,yaml,yml,sol'
